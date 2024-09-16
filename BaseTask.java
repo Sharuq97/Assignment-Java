@@ -6,7 +6,7 @@ public abstract class BaseTask {
     private int urgency; // Integer 
     private double estimatedTime; // Double
 
-    // Constructor to initialize the task with parameters (Requirement: At least 2 methods that accept parameters)
+    // Constructor to initialize the task with parameters
     public BaseTask(int id, String description, boolean isComplete, int urgency, double estimatedTime) {
         this.id = id;
         this.description = description;
