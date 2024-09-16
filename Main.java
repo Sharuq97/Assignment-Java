@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Instantiate TaskManager implementation (Requirement: Class instantiation)
+        // Instantiate TaskManager implementation
         TaskManagerImpl taskManager = new TaskManagerImpl();
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
-        // While loop to keep the program running until exit is chosen (Requirement: At least 2 loops)
+        // While loop to keep the program running until exit is chosen 
         while (running) {
             // Command-line interface to select operations (Requirement: Usable command-line interface)
             System.out.println("Choose an option: ");
@@ -45,6 +45,7 @@ public class Main {
                     System.out.println("Enter task ID to read: ");
                     id = scanner.nextInt();
                     Task task = taskManager.readTask(id);
+                    // if else
                     if (task != null) {
                         task.display();
                     } else {
@@ -76,7 +77,7 @@ public class Main {
                     break;
 
                 case 5:
-                    // Display all tasks (Requirement: For loop and task display)
+                    // Display all tasks (For Loop)
                     taskManager.displayAllTasks();
                     break;
 
