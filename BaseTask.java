@@ -1,10 +1,10 @@
 // Abstract class to demonstrate inheritance and abstraction
 public abstract class BaseTask {
-    private int id; // Integer (Requirement: At least one integer)
-    private String description; // String (Requirement: At least one String)
-    private boolean isComplete; // Boolean for task completion
-    private int urgency; // Integer for task urgency (1 to 5)
-    private double estimatedTime; // Double (Requirement: At least one double)
+    private int id; // Integer 
+    private String description; // String
+    private boolean isComplete; // Boolean
+    private int urgency; // Integer 
+    private double estimatedTime; // Double
 
     // Constructor to initialize the task with parameters (Requirement: At least 2 methods that accept parameters)
     public BaseTask(int id, String description, boolean isComplete, int urgency, double estimatedTime) {
@@ -15,7 +15,7 @@ public abstract class BaseTask {
         this.estimatedTime = estimatedTime;
     }
 
-    // Getters and setters for each field (Requirement: At least 2 methods with parameters)
+    // Getters and setters for each field 
     public int getId() {
         return id;
     }
@@ -56,10 +56,10 @@ public abstract class BaseTask {
         this.estimatedTime = estimatedTime;
     }
 
-    // Abstract method to be overridden (Requirement: Abstract base class and method to override)
+    // Abstract method to be overridden 
     public abstract void display();
 
-    // Concrete method that can be inherited (Requirement: Demonstrates inheritance)
+    // Concrete method that can be inherited
     public void markComplete() {
         this.isComplete = true;
     }
