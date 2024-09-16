@@ -1,7 +1,7 @@
 // Task class inherits from BaseTask
 public class Task extends BaseTask {
 
-    // Constructor that calls the superclass constructor (Requirement: Uses super())
+    // Constructor that calls the superclass constructor - super()
     public Task(int id, String description, boolean isComplete, int urgency, double estimatedTime) {
         super(id, description, isComplete, urgency, estimatedTime);
     }
