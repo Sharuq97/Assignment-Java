@@ -9,7 +9,7 @@ public class Main {
 
         // While loop to keep the program running until exit is chosen 
         while (running) {
-            // Command-line interface to select operations (Requirement: Usable command-line interface)
+            // Command-line interface to select operations
             System.out.println("Choose an option: ");
             System.out.println("1. Create Task");
             System.out.println("2. Read Task");
@@ -22,7 +22,7 @@ public class Main {
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
-            // Handle different CRUD operations (Requirement: At least 2 if/else or if/else if)
+            // Handle different CRUD operations 
             switch (choice) {
                 case 1:
                     // Create a task
@@ -57,7 +57,7 @@ public class Main {
                     // Update a task
                     System.out.println("Enter task ID to update: ");
                     id = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine();
                     System.out.println("Enter new task description: ");
                     description = scanner.nextLine();
                     System.out.println("Is the task complete (true/false)? ");
